@@ -12,11 +12,11 @@ export default function Footer() {
             <div className="md:col-span-3">
               <Link href="#" className="logo-footer">
                 <Image
-                  src={"/images/logo-light.png"}
+                  src={"/images/pi1.png"}
                   className="md:ms-0 mx-auto"
                   alt=""
-                  width={105}
-                  height={24}
+                  width={120}
+                  height={50}
                 />
               </Link>
             </div>
