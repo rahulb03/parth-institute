@@ -1,0 +1,27 @@
+/* toastify.css */
+
+/* Custom progress bar for success toasts */
+.Toastify__progress-bar--success {
+    background: var(--toastify-color-progress-success);
+  }
+  
+  /* Custom success toast styles */
+  .Toastify__toast--success {
+    background: #ea580c;
+    color: var(--toastify-text-color-success);
+  }
+  
+  /* Override other styles if needed */
+  .Toastify__toast-container--top-center {
+    top: var(--toastify-toast-top);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Define CSS variables */
+  :root {
+    --toastify-color-success: white; /* Success background color */
+    --toastify-text-color-success: #fff; /* Success text color */
+    --toastify-color-progress-success: linear-gradient(90deg, #ea580c); /* Success progress bar color */
+  }
+  
