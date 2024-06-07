@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
                 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
                 const favicon = document.getElementById('favicon');
                 if (darkModeMediaQuery.matches) {
-                  favicon.href = '/images/pi.ico';
-                } else {
                   favicon.href = '/images/parth.ico';
+                } else {
+                  favicon.href = '/images/pi.ico';
                 }
               }
 
