@@ -13,13 +13,13 @@ export default function Contact() {
         message: ''
     });
 
-    // const serviceID = 'service_g36m3xm';  
-    // const templateID = 'template_t89qeti';  
-    // const publicKey = 'YkM5eKfX3c5Lavz6-';  
+    const serviceID = 'service_g36m3xm';  
+    const templateID = 'template_t89qeti';  
+    const publicKey = 'YkM5eKfX3c5Lavz6-';  
 
-    const serviceID = 'service_dnsutqd';  
-    const templateID = 'template_9fe4vtg';  
-    const publicKey = '2ucmdjgMuwh4qLpX6';
+    // const serviceID = 'service_dnsutqd';  
+    // const templateID = 'template_9fe4vtg';  
+    // const publicKey = '2ucmdjgMush4qLpX6';
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
