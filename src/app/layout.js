@@ -8,27 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="LTR">
-      <head>
+     
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link id="favicon" rel="icon" href="/images/parth.ico" />
-        <script dangerouslySetInnerHTML={{ __html: `
-          function setFavicon() {
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            const favicon = document.getElementById('favicon');
-            if (darkModeMediaQuery.matches) {
-              favicon.href = '/images/parth.ico'; // Dark mode icon
-            } else {
-              favicon.href = '/images/pi.ico'; // Light mode icon
-            }
-          }
-
-          setFavicon();
-
-          window.matchMedia('(prefers-color-scheme: dark)').addListener(setFavicon);
-          window.matchMedia('(prefers-color-scheme: light)').addListener(setFavicon);
-        `}} />
-      </head>
+        
       <body>{children}</body>
     </html>
   );
