@@ -19,7 +19,7 @@ import InstructorProfiles, { ProfileCard } from "./component/instructor";
 function Home() {
   const [isOpen, setMenu] = useState(true);
   const [scroll, setScroll] = useState(false);
-  const [imageSrc, setImageSrc] = useState("/images/pi1.png");
+  const [imageSrc, setImageSrc] = useState("/images/pi2.png");
 
   useEffect(() => {
     const handleScroll = () => {
