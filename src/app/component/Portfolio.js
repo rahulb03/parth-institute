@@ -189,7 +189,7 @@ export default function Portfolio() {
       </section>
 
       <section
-        style={{ backgroundImage: `url(${"/images/educationcta.png"})`, height: "450px" }}
+        style={{ backgroundImage: `url(${"/images/educationcta.png"})` }}
         className="py-24 w-full table relative bg-center bg-cover"
       >
         <div className="absolute inset-0 bg-black opacity-80"></div>
