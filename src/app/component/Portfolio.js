@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
+
 import Lightbox from "react-18-image-lightbox";
 import "react-18-image-lightbox/style.css";
-import Link from "next/link";
 import Image from "next/legacy/image";
 import { FaCamera } from "react-icons/fa";
 
@@ -205,12 +206,30 @@ export default function Portfolio() {
 
             <div className="relative mt-10">
               <Link
-                href="#"
+                
                 className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
-              >
+                to="contact"
+                activeclassname="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+             >
                 Contact Us
               </Link>
             </div>
+
+              {/* <div className="relative mt-10">
+                  <Link
+                    className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
+                    to="contact"
+                    activeclassname="active"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                 >
+                Contact us
+                  </Link>
+                </div> */}
           </div>
         </div>
       </section>
