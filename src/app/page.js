@@ -25,11 +25,15 @@ function Home() {
     const handleScroll = () => {
       const scrollCheck = window.scrollY > 50;
       setScroll(scrollCheck);
-      setImageSrc(scrollCheck ? "/images/pi2.png" : "/images/pi1.png");
+      if (window.innerWidth >= 768) {
+        setImageSrc(scrollCheck ? "/images/pi2.png" : "/images/pi1.png");
+      }
     };
 
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll);
+      if (window.innerWidth >= 768) {
+        window.addEventListener("scroll", handleScroll);
+      }
     }
 
     const typed = new Typed("#typed", {
@@ -181,36 +185,6 @@ function Home() {
                   >
                     <span className="nav-link">Media</span>
                   </Link>
-                  {/* <Link
-                    className="nav-item"
-                    to="testi"
-                    activeclassname="active"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    <span className="nav-link">Review</span>
-                  </Link> */}
-                  {/* <Link
-                    className="nav-item"
-                    to="pricing"
-                    activeclassname="active"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    <span className="nav-link">Pricing</span>
-                  </Link> */}
-                  {/* <Link
-                    className="nav-item"
-                    to="blog"
-                    activeclassname="active"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    <span className="nav-link">Blog</span>
-                  </Link> */}
                   <Link
                     className="nav-item"
                     to="contact"
