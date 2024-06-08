@@ -50,47 +50,7 @@ export default function About() {
         </div>
       </section>
 
-      <div className="mediums-boards-container">
-            <h2>Mediums and Boards Offered</h2>
-            <div className="mediums-section">
-                <h3>Mediums:</h3>
-                <ul>
-                    <li>Hindi</li>
-                    <li>Gujarati</li>
-                    <li>English</li>
-                </ul>
-            </div>
-            <div className="boards-section">
-                <h3>Boards:</h3>
-                <ul>
-                    <li>CBSE</li>
-                    <li>GSEB</li>
-                </ul>
-            </div>
-            <style jsx>{`
-                .mediums-boards-container {
-                    margin-top: 20px;
-                    padding: 20px;
-                    border: 1px solid #ddd;
-                    border-radius: 5px;
-                    background-color: #f9f9f9;
-                }
-
-                .mediums-section, .boards-section {
-                    margin-bottom: 15px;
-                }
-
-                ul {
-                    list-style-type: none;
-                    padding: 0;
-                }
-
-                li {
-                    margin-bottom: 5px;
-                }
-            `}</style>
-        </div>
-     
+    
     </>
   );
 }

@@ -11,28 +11,23 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        {/* Default favicon */}
         <link id="favicon" rel="icon" href="/images/parth.ico" />
-        {/* Script to dynamically change favicon based on theme */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              function setFavicon() {
-                const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                const favicon = document.getElementById('favicon');
-                if (darkModeMediaQuery.matches) {
-                  favicon.href = '/images/parth.ico';
-                } else {
-                  favicon.href = '/images/pi.ico';
-                }
-              }
+        <script dangerouslySetInnerHTML={{ __html: `
+          function setFavicon() {
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            const favicon = document.getElementById('favicon');
+            if (darkModeMediaQuery.matches) {
+              favicon.href = '/images/parth.ico'; // Dark mode icon
+            } else {
+              favicon.href = '/images/pi.ico'; // Light mode icon
+            }
+          }
 
-              setFavicon();
+          setFavicon();
 
-              window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setFavicon);
-            `,
-          }}
-        />
+          window.matchMedia('(prefers-color-scheme: dark)').addListener(setFavicon);
+          window.matchMedia('(prefers-color-scheme: light)').addListener(setFavicon);
+        `}} />
       </head>
       <body>{children}</body>
     </html>

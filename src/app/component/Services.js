@@ -92,7 +92,14 @@ export default function Services() {
                 >
                
                   <div className="w-20 h-20 bg-white text-orange-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm">
-                    <Image src={item.imageSrc} alt="rahul" width={item.width} height={item.height}  style={{backgroundColor:'transparent'}} />
+                    <Image
+                        src={item.imageSrc} 
+                        alt="rahul"
+                        width={item.width}
+                        height={item.height} 
+                        style={{backgroundColor:'transparent'}}
+                        priority
+                        />
                   </div>
                 
                   <div className="content mt-7">
@@ -132,7 +139,7 @@ export default function Services() {
                   <div className="">
                     <div className="duration date-label-left ltr:float-right rtl:float-left md:me-7 relative">
                       <Image
-                        src={"/images/svg/design-thinking.svg"}
+                        src={"/images/programs/carrier.jpg"}
                         className="h-64 w-64"
                         alt=""
                         width={200}
@@ -144,7 +151,7 @@ export default function Services() {
                   <div className="mt-4 md:mt-0">
                     <div className="event event-description-right ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
                       <h5 className="text-lg dark:text-white mb-1 font-medium">
-                        Carrier counseling
+                        Career counselling
                       </h5>
                       <p className="timeline-subtitle mt-3 mb-0 text-slate-400">
                         We provide personalized career guidance to help you achieve your professional goals. Our advisors offer support and insights to navigate your career path successfully.
@@ -168,7 +175,7 @@ export default function Services() {
                   <div className="md:order-2 order-1">
                     <div className="duration duration-right md:ms-7 relative">
                       <Image
-                        src={"/images/svg/coding.svg"}
+                        src={"/images/programs/pbe.jpeg"}
                         className="h-64 w-64"
                         alt=""
                         width={200}
@@ -184,10 +191,10 @@ export default function Services() {
                   <div className="mt-4 mt-sm-0">
                     <div className="duration date-label-left ltr:float-right rtl:float-left md:me-7 relative">
                       <Image
-                        src={"/images/svg/office-desk.svg"}
+                        src={"/images/programs/ws1.jpeg"}
                         className="h-64 w-64"
                         alt=""
-                        width={200}
+                        width={220}
                         height={200}
                         priority
                       />
@@ -205,25 +212,26 @@ export default function Services() {
                   </div>
                 </div>
               </div>
+            
               <div className="timeline-item mt-5 pt-4">
                 <div className="grid sm:grid-cols-2">
                   <div className="md:order-1 order-2">
                     <div className="event event-description-left ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
                       <h5 className="text-lg dark:text-white mb-1 font-medium">
-                        English grammar & vedic mathematics
+                        English grammar 
                       </h5>
                       <p className="timeline-subtitle mt-3 mb-0 text-slate-400">
-                        We teach English grammar and Vedic mathematics to help you master language skills and ancient calculation techniques. Our courses are designed to make learning engaging and effective.
+                      English grammar forms the foundation of effective communication by governing sentence structure and word usage. Join our institute to master these skills and enhance your clarity and precision in language.
                       </p>
                     </div>
                   </div>
                   <div className="md:order-2 order-1">
                     <div className="duration duration-right md:ms-7 relative">
                       <Image
-                        src={"/images/svg/coding.svg"}
+                        src={"/images/programs/3g.jpg"}
                         className="h-64 w-64"
                         alt=""
-                        width={200}
+                        width={250}
                         height={200}
                         priority
                       />
@@ -236,7 +244,7 @@ export default function Services() {
                   <div className="mt-4 mt-sm-0">
                     <div className="duration date-label-left ltr:float-right rtl:float-left md:me-7 relative">
                       <Image
-                        src={"/images/svg/office-desk.svg"}
+                        src={"/images/programs/anc1.jpg"}
                         className="h-64 w-64"
                         alt=""
                         width={200}
@@ -247,15 +255,10 @@ export default function Services() {
                   <div className="mt-4 mt-sm-0">
                     <div className="event event-description-right ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
                       <h5 className="text-lg dark:text-white mb-1 font-medium">
-                        Indoor games and Art & crafts
+                        Art & crafts
                       </h5>
                       <p className="timeline-subtitle mt-3 mb-0 text-slate-400">
-                        Indoor Games:
-                        Unlock creativity and strategy with every move—indoor games foster fun and learning!
-                        Dive into a world of imagination and teamwork through engaging indoor games.
-                        <br />
-                        <br />
-                        Arts & Crafts:
+                        
                         Unleash your inner artist—arts & crafts inspire creativity and self-expression!
                         Create, innovate, and explore—the world of arts & crafts is full of endless possibilities.
                       </p>
@@ -263,6 +266,7 @@ export default function Services() {
                   </div>
                 </div>
               </div>
+             
               <div className="timeline-item mt-5 pt-4">
                 <div className="grid sm:grid-cols-2">
                   <div className="md:order-1 order-2">
@@ -278,7 +282,7 @@ export default function Services() {
                   <div className="md:order-2 order-1">
                     <div className="duration duration-right md:ms-7 relative">
                       <Image
-                        src={"/images/svg/coding.svg"}
+                        src={"/images/programs/trip1.png"}
                         className="h-64 w-64"
                         alt=""
                         width={200}
@@ -289,16 +293,17 @@ export default function Services() {
                   </div>
                 </div>
               </div>
+          
               <div className="timeline-item mt-5 pt-4">
                 <div className="grid sm:grid-cols-2">
                   <div className="mt-4 mt-sm-0">
                     <div className="duration date-label-left ltr:float-right rtl:float-left md:me-7 relative">
                       <Image
-                        src={"/images/svg/office-desk.svg"}
+                        src={"/images/programs/ec2.jpeg"}
                         className="h-64 w-64"
                         alt=""
-                        width={200}
-                        height={200}
+                        width={220}
+                        height={180}
                         priority
                       />
                     </div>
@@ -315,6 +320,62 @@ export default function Services() {
                   </div>
                 </div>
               </div>
+
+              <div className="timeline-item mt-5 pt-4">
+                <div className="grid sm:grid-cols-2">
+                  <div className="md:order-1 order-2">
+                    <div className="event event-description-left ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
+                      <h5 className="text-lg dark:text-white mb-1 font-medium">
+                        indoor games
+                      </h5>
+                      <p className="timeline-subtitle mt-3 mb-0 text-slate-400">
+                      Unlock creativity and strategy with every move—indoor games foster fun and learning!
+                      Dive into a world of imagination and teamwork through engaging indoor games.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="md:order-2 order-1">
+                    <div className="duration duration-right md:ms-7 relative">
+                      <Image
+                        src={"/images/programs/ig.jpg"}
+                        className="h-64 w-64"
+                        alt=""
+                        width={250}
+                        height={250}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div className="timeline-item mt-5 pt-4">
+                <div className="grid sm:grid-cols-2">
+                  <div className="mt-4 mt-sm-0">
+                    <div className="duration date-label-left ltr:float-right rtl:float-left md:me-7 relative">
+                      <Image
+                        src={"/images/programs/vm.jpeg"}
+                        className="h-64 w-64"
+                        alt=""
+                        width={220}
+                        height={200}
+                        priority
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-4 mt-sm-0">
+                    <div className="event event-description-right ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
+                      <h5 className="text-lg dark:text-white mb-1 font-medium">
+                        vedic mathematics
+                      </h5>
+                      <p className="timeline-subtitle mt-3 mb-0 text-slate-400">
+              Unlocking the mysteries of the universe, one equation at a time, with the timeless wisdom of Vedic Mathematics.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

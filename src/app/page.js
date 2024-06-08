@@ -274,7 +274,8 @@ function Home() {
           {/* Portfolio section */}
           <Portfolio />
 
-          <ProfileCard />
+          {/* teacher's photo */}
+          {/* <ProfileCard /> */}
 
           <Contact />
 
