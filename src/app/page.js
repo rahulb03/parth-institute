@@ -19,14 +19,14 @@ import InstructorProfiles, { ProfileCard } from "./component/instructor";
 function Home() {
   const [isOpen, setMenu] = useState(true);
   const [scroll, setScroll] = useState(false);
-  const [imageSrc, setImageSrc] = useState("/images/pi2.png");
+  const [imageSrc, setImageSrc] = useState("/images/pi1.png");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollCheck = window.scrollY > 50;
       setScroll(scrollCheck);
       if (window.innerWidth >= 768) {
-        setImageSrc(scrollCheck ? "/images/pi1.png" : "/images/pi2.png");
+        setImageSrc(scrollCheck ? "/images/pi2.png" : "/images/pi1.png");
       }
     };
 
