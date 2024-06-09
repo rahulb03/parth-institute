@@ -14,12 +14,16 @@ import "./assets/scss/icons.scss";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import Portfolio from "./component/Portfolio";
-import InstructorProfiles, { ProfileCard } from "./component/instructor";
+import  ProfileCard  from "./component/instructor";
 
 function Home() {
   const [isOpen, setMenu] = useState(true);
   const [scroll, setScroll] = useState(false);
-  const [imageSrc, setImageSrc] = useState("/images/pi1.png");
+  const [imageSrc, setImageSrc] = useState(
+    typeof window !== "undefined" && window.innerWidth < 768
+      ? "/images/pi2.png"
+      : "/images/pi1.png"
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,9 +35,7 @@ function Home() {
     };
 
     if (typeof window !== "undefined") {
-      if (window.innerWidth >= 768) {
-        window.addEventListener("scroll", handleScroll);
-      }
+      window.addEventListener("scroll", handleScroll);
     }
 
     const typed = new Typed("#typed", {
@@ -235,7 +237,6 @@ function Home() {
                     Contact Us
                   </Link>
                 </div>
-                
               </div>
             </div>
           </section>
@@ -249,11 +250,13 @@ function Home() {
           {/* Portfolio section */}
           <Portfolio />
 
-          {/* teacher's photo */}
+          {/* InstructorProfiles section */}
           {/* <ProfileCard /> */}
 
+          {/* Contact */}
           <Contact />
 
+          {/* Footer */}
           <Footer />
         </div>
       </Wrapper>
